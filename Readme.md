@@ -17,7 +17,7 @@ A full-stack CRUD application built with Node.js and MySQL, deployed using Docke
 
 ## 🧱 Architecture Overview
 
-![Minikube Architecture](./docs/Minikube-project.drawio.png)
+![Minikube Architecture](./docs/Minikube-Project.drawio.png)
 
 
 - MySQL is initialized with `init.sql` (prepopulated schema + user)

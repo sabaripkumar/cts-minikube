@@ -1,0 +1,23 @@
+# Node.js dependencies (will be reinstalled in image)
+node_modules
+
+# Git metadata
+.git
+
+# Logs and debug output
+*.log
+npm-debug.log*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Env or secret config files (if any)
+.env
+
+# Optional: Exclude README or LICENSE if not needed in image
+README.md
+LICENSE
+
+# Dockerfile itself (optional)
+Dockerfile

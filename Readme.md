@@ -46,6 +46,7 @@ docker build -t nodejs-crud-app:latest .
 ```bash
 kubectl apply -f k8s/mysql/mysql-secret.yaml
 kubectl apply -f k8s/mysql/mysql-pvc.yaml
+kubectl create configmap mysql-initdb-config --from-file=init.sql
 kubectl apply -f k8s/mysql/mysql-deployment.yaml
 ```
 

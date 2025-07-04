@@ -51,7 +51,6 @@ kubectl apply -f k8s/mysql/mysql-deployment.yaml
 ```
 
 #### b. Deploy App
-```bash
 kubectl apply -f k8s/app/app-deployment.yaml
 kubectl apply -f k8s/app/app-service.yaml
 kubectl apply -f k8s/app/ingress.yaml
@@ -70,16 +69,39 @@ Make an entry in hosts file for 127.0.0.1 using the URL shown by `kubectl get in
 ## 📂 Folder Structure
 
 ```
-project-root/
-├── app/nodejs-mysql-crud                   # Node.js app source
-│   ├── app.js, routes/, views/
-│   └── package.json, Dockerfile
-├── k8s/
-│   ├── mysql/
-│   │   ├── mysql-deployment.yaml, pvc.yaml, secret.yaml, init.sql
-│   ├── app/
-│   │   ├── app-deployment.yaml, service.yaml, ingress.yaml
-│   └── README.md
+.
+├── .gitignore
+├── README.md
+├── app
+│   └── nodejs-mysql-crud
+│       ├── .dockerignore
+│       ├── Dockerfile
+│       ├── README.md
+│       ├── app.js
+│       ├── config.js
+│       ├── package-lock.json
+│       ├── package.json
+│       ├── routes
+│       │   ├── index.js
+│       │   └── users.js
+│       └── views
+│           ├── index.ejs
+│           ├── layouts
+│           └── user
+├── docs
+│   └── Minikube-Project.drawio.png
+└── k8s
+    ├── app
+    │   ├── app-deployment.yaml
+    │   ├── app-ingress.yaml
+    │   └── app-service.yaml
+    └── mysql
+        ├── init.sql
+        ├── mysql-deployment.yaml
+        ├── mysql-pvc.yaml
+        ├── mysql-secret.yaml
+        └── mysql-service.yaml
+
 ```
 
 ---

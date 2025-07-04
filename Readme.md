@@ -71,7 +71,7 @@ Make an entry in hosts file for 127.0.0.1 using the URL shown by `kubectl get in
 
 ```
 project-root/
-├── app/                   # Node.js app source
+├── app/nodejs-mysql-crud                   # Node.js app source
 │   ├── app.js, routes/, views/
 │   └── package.json, Dockerfile
 ├── k8s/
